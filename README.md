@@ -7,6 +7,8 @@ Run the `init_repo.sh` script:
 ```bash
 ./init_repo.sh
 ```
+> ⚠️ **Note:** If your machine does not have GPU run `init_repo_no_cuda.sh` instead 
+
 
 This script will:
 

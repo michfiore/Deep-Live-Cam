@@ -28,5 +28,6 @@ dependencies = [
     "jupyter",
     "ipywidgets",
     "gfpgan",
+    "s3fs>=2025.5.1",
 ]
 
