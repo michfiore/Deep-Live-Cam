@@ -8,7 +8,7 @@ sudo apt-get install -y python3-opencv zlib1g-dev libmagic1 ffmpeg cudnn9-cuda-1
 
 echo "Downloading models"
 
-curl -L -o models/inswapper_128_fp16.onnx https://huggingface.co/hacksider/deep-live-cam/resolve/main/inswapper_128_fp16.onnx 
+aws s3 cp s3://sagemaker-production-eu-central-1-kl-biometric-datasets/raw_datasets/face_biometrics/deepfakes/hackathon_2025-07_deepfakes/models/inswapper_128_fp16.onnx ./models/inswapper_128_fp16.onnx
 curl -L -o models/GFPGANv1.4.pth https://github.com/TencentARC/GFPGAN/releases/download/v1.3.4/GFPGANv1.4.pth
 
 echo "Installing uv"
